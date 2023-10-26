@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&family=Poppins:wght@300;400;500&display=swap');
+        </style>
+        <title>Weather App</title>
+        
+	</head>
+	<body class="bg-slate-700 font-[Montserrat] text-white">
+		<div class="flex items-center justify-center">
+			<div class=" p-3 w-3/4 sm:3/2 max-w-10 mt-16 bg-slate-800 shadow-md text-center rounded-lg min-w-min">
+				<h1 class="text-3xl font-bold text-center pt-3">Weather App</h1>
+				<br />
+				<form class="mb-5" id="form">
+					<label for="cityname"></label>
+					<input
+						class="text-center w-60% py-1 px-2 border-0 outline-0 bg-slate-800"
+						type="text"
+						name="cityname"
+						id="cityname"
+						placeholder="Enter City Name"
+					/>
+					<input
+						class="py-1 px-2 mt-2 sm:mt-0 rounded-md bg-green-600 text-white hover:bg-green-700 cursor-pointer transition-colors"
+						type="submit"
+						value="Get Weather"
+					/>
+				</form>
+				<div id="weather-data">
+					<div class="icon flex justify-center items-center"></div>
+					<div class="temperature text-4xl font-semibold py-5"></div>
+					<div class="description text-3xl font-base pb-5"></div>
+					<div class="details flex justify-center items-center flex-wrap">
+						<!-- <div class="flex-1 p-5 m-2 bg-gray-900 rounded-lg"></div>
+						<div class="flex-1 p-5 m-2 bg-gray-900 rounded-lg"></div>
+						<div class="flex-1 p-5 m-2 bg-gray-900 rounded-lg"></div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+        <script src="/weather-app/script.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
