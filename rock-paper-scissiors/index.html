@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+		</style>
+		<title>RPS Game</title>
+	</head>
+	<body class="flex items-center justify-center font-[Poppins] bg-gray-300">
+		<div
+			class="bg-gray-700 text-white text-center max-w-xl p-8 m-5 mt-16 rounded-lg"
+		>
+			<h1 class="py-5 text-4xl">Rock Paper Scissors Game</h1>
+			<p class="py-3 text-xl">Choose your move!</p>
+			<div id="moves" class="flex items-center justify-center">
+				<button
+					id="rock"
+					class="border-2 p-2 m-3 rounded-lg bg-red-700 hover:bg-red-800 transition-colors cursor-pointer"
+				>
+					&#128074;
+				</button>
+				<button
+					id="paper"
+					class="border-2 p-2 m-3 rounded-lg bg-blue-700 hover:bg-blue-800 transition-colors cursor-pointer"
+					>&#128400;
+                </button>
+				<button
+					id="scissors"
+					class="border-2 p-2 m-3 rounded-lg bg-green-700 hover:bg-green-800 transition-colors cursor-pointer"
+					>&#9996;</button
+				>
+			</div>
+			<p id="result" class="py-4 text-xl"></p>
+			<div
+				id="scores"
+				class="text-lg border-2 rounded-xl py-1 flex justify-evenly"
+			>
+				<div>&#128578; Score: <span id="user-score">0</span></div>
+				<div>&#128421; Score: <span id="computer-score">0</span></div>
+			</div>
+		</div>
+		<script src="/rock-paper-scissiors/script.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
