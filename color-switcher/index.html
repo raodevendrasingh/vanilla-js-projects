@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+		</style>
+		<title>Color Scheme Switcher</title>
+	</head>
+	<body class="flex items-center justify-center bg-gray-300">
+		<div
+			class="canvas text-center mt-5 p-5 px-20 shadow-md rounded-lg bg-slate-400 min-w-min"
+		>
+			<h1 class="text-5xl pt-3 pb-8">Color Scheme Switcher</h1>
+			<div class="color flex items-center justify-center flex-wrap">
+				<span
+					class="button h-20 w-20 bg-yellow-500 m-3 rounded-lg border-2 border-black cursor-pointer"
+					id="yellow"
+				></span>
+				<span
+					class="button h-20 w-20 bg-blue-700 m-3 rounded-lg border-2 border-black cursor-pointer"
+					id="blue"
+				></span>
+				<span
+					class="button h-20 w-20 bg-green-700 m-3 rounded-lg border-2 border-black cursor-pointer"
+					id="green"
+				></span>
+				<span
+					class="button h-20 w-20 bg-red-700 m-3 rounded-lg border-2 border-black cursor-pointer"
+					id="red"
+				></span>
+			</div>
+
+			<h2 class="text-lg mt-6">
+				Try clicking on one of the colors above <br />
+				<span>to change the background color of this page!</span>
+			</h2>
+		</div>
+        <script src="/color-switcher/script.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
