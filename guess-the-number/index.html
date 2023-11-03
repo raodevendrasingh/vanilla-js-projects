@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess the Number</title>
+	</head>
+	<body class="bg-gray-800 text-white">
+		<div class="flex justify-center items-center mx-auto flex-col bg-slate-700 p-10 mt-10 max-w-xl rounded-md">
+			<p class="text-md">
+				Try and guess a random number between 1 and 100. 
+                <br>
+                You have 10 attempts to guess the right number.
+			</p>
+            <h1 class="text-3xl py-5">Guess the Number</h1>
+            <form class="flex flex-col">
+                <label for="guess"></label>
+                <input type="text" id="guess" class="rounded-md px-2 py-1 mb-3 outline-0 text-black" required placeholder="Enter your guess">
+                <input
+					class="py-1 px-2 sm:mt-0 rounded-md bg-green-600 text-white hover:bg-green-700 cursor-pointer transition-colors"
+					type="submit"
+                    id="submit"
+					value="Submit Guess"
+				/>
+            </form>
+            <div class="resultParas mt-5">
+                <p >Previous Guesses: <span class="guesses"></span></p>
+                <p >Guesses Remaining: <span class="lastResult">10</span></p>
+                <p class="lowOrHigh"></p>
+            </div>
+		</div>
+		<script src="/guess-the-number/script.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
